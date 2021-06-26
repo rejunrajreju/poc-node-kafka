@@ -1,0 +1,30 @@
+{
+  "name": "poc-node-kafka",
+  "version": "1.0.0",
+  "description": "poc apache kafka",
+  "main": "index.js",
+  "scripts": {
+    "start-producer" : "PRODUCER_PORT=3004 nodemon --inspect ./producers/index.js",
+    "start-consumer" : "CONSUMER_PORT=3003 nodemon ./consumers/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rejunrajreju/poc-node-kafka.git"
+  },
+  "keywords": [
+    "kafka"
+  ],
+  "author": "rejunrajreju@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rejunrajreju/poc-node-kafka/issues"
+  },
+  "homepage": "https://github.com/rejunrajreju/poc-node-kafka#readme",
+  "dependencies": {
+    "fastify": "^3.18.0",
+    "kafkajs": "^1.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
